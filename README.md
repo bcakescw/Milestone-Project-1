@@ -1,8 +1,4 @@
 # Milestone-Project-1
 
-
-My thought was to create a matching game for children (5th graders) to use to study science vocabulary. 
-A matching game is what I thought could help. The user would need to match the vocabulary word to the image that matches best. 
-The user will also need to be able to remember what card contained what image or vocabulary word. 
-When the user makes a match, they should receive a message that they got the match correct or a message saying they need to try again. 
-The user will know they have won the game, when they have matched all the vocabulary words and images correctly. 
+**Inspiration**:
+My inspiration is that I have taught 5th grade students science before. Students are always needing to work on building their vocabulary in science so they can better understand the concept. Being able to match the image and vocabulary word together will allow students to study and grow their vocbaulry in science. I also know that teachers are always looking for ways to have their students interact with the content in an engaging manner that will allow students to remember and learn more.  I have had students create phyiscal matching games before using index cards, list of vocabulary words, and they draw their own image. This would allow students to take the next step after making their own matching set. They would need to take what they have learned to make correct matches in this game. 
