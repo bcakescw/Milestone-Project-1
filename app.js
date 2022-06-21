@@ -10,7 +10,8 @@ const matchingChances = 12;
 //link text 'results' to matchingChances
 result.textContent = matchingChances;
 
-//generate images and name of images
+//generate images and name of images in an array using an arrow function
+//arrow function represents owner of function, so getData is the owner of the array function
 const getData = () => [
     { imgSrc: "./images/AnemometerPic.jpeg", name: "anemometer picture" },
     { imgSrc: "./images/Anemometer.jpeg", name: "anemometer definition" },
@@ -23,10 +24,11 @@ const getData = () => [
     { imgSrc: "./images/blank-square.png", name: "blank square"},
 ]
 
-//randomize cards
+//randomize cards and use an arrow function that is owned by randomize
 const randomize = () => {
     const cardData = getData();
    cardData.sort (() => Math.random () - 0.5);
+   //Math.random function is owned by cardData.sort and is used to randomize the arrary. 
    console.log(cardData);
 }
 randomize()
