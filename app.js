@@ -21,16 +21,27 @@ const getData = () => [
     { imgSrc: "./images/rain-gauge.jpeg", name: "rain gauge defintion" },
     { imgSrc: "./images/thermometer.jpeg", name: "thermometer picture" },
     { imgSrc: "./images/Thermometer.jpeg", name: "thermometer defintion" },
-    { imgSrc: "./images/blank-square.png", name: "blank square"},
+    { imgSrc: "./images/blank-square.png", name: "blank square" },
 ]
 
 //randomize cards: use an arrow function that is owned by randomize
 //https://www.w3schools.com/js/js_arrow_function.asp helped to better understand how arrow functions
 const randomize = () => {
     const cardData = getData();
-   cardData.sort (() => Math.random () - 0.5);
-   //Math.random function is owned by cardData.sort and is used to randomize the arrary. 
-   // https://www.w3schools.com/js/default.asp was used to help randomize the arrary.
-   console.log(cardData);
+    cardData.sort(() => Math.random() - 0.5);
+    //Math.random function is owned by cardData.sort and is used to randomize the arrary. 
+    // https://www.w3schools.com/js/default.asp was used to help randomize the arrary.
+    //console.log(cardData);
 }
-randomize()
+
+//cardGenerator is assigned the function of card data being randomize.
+//cardData can be assigned as a variable in many ways as long as it stays in the function.
+//cardData is not in the global part of the javascript document
+const cardGenerator = () => {
+    const cardData = randomize();
+    console.log(cardData);
+};
+
+cardGenerator();
+
+//console.log as undefined
