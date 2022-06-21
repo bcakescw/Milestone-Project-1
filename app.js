@@ -11,13 +11,29 @@ const matchingChances = 12;
 result.textContent = matchingChances;
 
 //generate images and name of images
-const getData = function() {[
-    { imgSrc: "./images/AnemometerPic.jpeg", name: "anemometer picture"},
-    { imgSrc: "./images/Anemometer.jpeg", name: "anemometer definition"},
-    { imgSrc: "./images/Barometer.jpeg", name: "barometer definition"},
-    { imgSrc: "./images/mercury-barometer-science-photo-library.jpeg", name: "barometer picture"},
-    { imgSrc: "./images/Rain-gauge.jpeg", name: "rain gauge picture"},
-    { imgSrc: "./images/rain-gauge.jpeg", name: "rain gauge defintion"},
-    { imgSrc: "./images/thermometer.jpeg", name: "thermometer picture"},
-    { imgSrc: "./images/Thermometer.jpeg", name: "thermometer defintion"},
-]}
+const getData = () => [
+    { imgSrc: "./images/AnemometerPic.jpeg", name: "anemometer picture" },
+    { imgSrc: "./images/Anemometer.jpeg", name: "anemometer definition" },
+    { imgSrc: "./images/Barometer.jpeg", name: "barometer definition" },
+    { imgSrc: "./images/mercury-barometer-science-photo-library.jpeg", name: "barometer picture" },
+    { imgSrc: "./images/Rain-gauge.jpeg", name: "rain gauge picture" },
+    { imgSrc: "./images/rain-gauge.jpeg", name: "rain gauge defintion" },
+    { imgSrc: "./images/thermometer.jpeg", name: "thermometer picture" },
+    { imgSrc: "./images/Thermometer.jpeg", name: "thermometer defintion" },
+]
+
+//randomize cards
+const randomize = () => {
+    const cardData = getData();
+   cardData.sort (() => Math.random () - 0.5);
+   return 
+   //console.log(cardData)
+}
+
+//card generator function
+const cardGenerator = () => {
+    const cardData = randomize();
+    console.log(cardData)
+}
+
+cardGenerator ()
