@@ -20,6 +20,7 @@ const getData = () => [
     { imgSrc: "./images/rain-gauge.jpeg", name: "rain gauge defintion" },
     { imgSrc: "./images/thermometer.jpeg", name: "thermometer picture" },
     { imgSrc: "./images/Thermometer.jpeg", name: "thermometer defintion" },
+    { imgSrc: "./images/blank-square.png", name: "blank square"},
 ]
 
 //randomize cards
