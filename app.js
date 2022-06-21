@@ -24,11 +24,13 @@ const getData = () => [
     { imgSrc: "./images/blank-square.png", name: "blank square"},
 ]
 
-//randomize cards and use an arrow function that is owned by randomize
+//randomize cards: use an arrow function that is owned by randomize
+//https://www.w3schools.com/js/js_arrow_function.asp helped to better understand how arrow functions
 const randomize = () => {
     const cardData = getData();
    cardData.sort (() => Math.random () - 0.5);
    //Math.random function is owned by cardData.sort and is used to randomize the arrary. 
+   // https://www.w3schools.com/js/default.asp was used to help randomize the arrary.
    console.log(cardData);
 }
 randomize()
