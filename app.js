@@ -22,6 +22,7 @@ const getData = () => [
     { imgSrc: "./images/thermometer.jpeg", name: "thermometer picture" },
     { imgSrc: "./images/Thermometer.jpeg", name: "thermometer defintion" },
     { imgSrc: "./images/blank-square.png", name: "blank square" },
+    //not all images are working, why?
 ]
 
 //randomize cards: use an arrow function that is owned by randomize
