@@ -13,16 +13,16 @@ result.textContent = matchingChances;
 //generate images and name of images in an array using an arrow function
 //arrow function represents owner of function, so getData is the owner of the array function
 const getData = () => [
-    { imgSrc: "./images/AnemometerPic.jpg", name: "anemometer picture" },
-    { imgSrc: "./images/Anemometer.jpeg", name: "anemometer definition" },
-    { imgSrc: "./images/Barometer.jpeg", name: "barometer definition" },
+    { imgSrc: "./images/AnemometerPic.jpeg", name: "anemometer picture" },
+    { imgSrc: "./images/Anemometer.jpg", name: "anemometer definition" },
+    { imgSrc: "./images/Barometer.jpg", name: "barometer definition" },
     { imgSrc: "./images/mercury-barometer-science-photo-library.jpeg", name: "barometer picture" },
     { imgSrc: "./images/Rain-gauge.jpeg", name: "rain gauge picture" },
-    { imgSrc: "./images/rain-gauge.jpeg", name: "rain gauge defintion" },
+    { imgSrc: "./images/rain-gauge.jpg", name: "rain gauge defintion" },
     { imgSrc: "./images/thermometer.jpeg", name: "thermometer picture" },
-    { imgSrc: "./images/Thermometer.jpeg", name: "thermometer defintion" },
+    { imgSrc: "./images/Thermometer.jpg", name: "thermometer defintion" },
     { imgSrc: "./images/blank-square.png", name: "blank square" },
-    //not all images are working, why?
+    //not all images are working, why? simple fix, needed to make sure the .jpg or .jpeg matched with the appropriate image. 
 ]
 
 //randomize cards: use an arrow function that is owned by randomize
