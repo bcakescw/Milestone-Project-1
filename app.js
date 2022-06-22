@@ -62,7 +62,7 @@ const cardGenerator = () => {
         //.classList allowed a class to be given to each of the elements that were created just above it.
         // a loop needs to be added next becuase it is only generating one card
 
-        section.appendChild(card);
+        grid.appendChild(card);
         card.appendChild(face);
         card.appendChild(back);
         // appendChild is needed to attch the cards to the section so it appears the screen
