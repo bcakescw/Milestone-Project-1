@@ -1,11 +1,22 @@
-body {
-    background-color: brown;
-    display: flex;
-    flex-wrap: wrap;
+html, body {
+   margin: 0;
 }
 
-.grid {
-    display: grid;
-    height: 200px;
-    width: 400px;
+div, section, article, header, footer {
+    box-sizing: border-box;
 }
+/* struggling to get my grid to work and used this site https://codepen.io/virmasalo/pen/XRmyYE 
+to help with the css up above*/
+
+.result {
+    color: whitesmoke;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   grid-column-gap: 6px;
+   grid-row-gap:6px;
+}
+    /* https://stackoverflow.com/questions/43129360/css-grid-wrapping 
+    /* used to help figure out how to get the squares in the grid to wrap*/
