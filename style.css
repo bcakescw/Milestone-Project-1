@@ -2,6 +2,8 @@ html,
 body {
     margin: 0;
     background-color: seashell;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 div,
@@ -19,15 +21,20 @@ header {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 30px;
     text-align: center;
     color: #189AB4;
+    font-family: sans-serif;
+    /*https://www.w3schools.com/css/css_font.asp used to choose font family*/
 }
 
 footer {
     margin-top: 36px;
     text-align: center;
 }
+
+/* struggled to get my grid to work and used this site https://codepen.io/virmasalo/pen/XRmyYE 
+to help with the css up above*/
 
 button {
     background-color: white;
@@ -37,13 +44,15 @@ button {
     padding: 6px 10px;
     font-size: 20px;
     border-radius: 1.5em;
-}
+    font-family: sans-serif;
+    cursor: pointer;
+} 
 
-/* struggled to get my grid to work and used this site https://codepen.io/virmasalo/pen/XRmyYE 
-to help with the css up above*/
-
-.result {
-    color: whitesmoke;
+.face {
+    border: solid;
+    border-color: #05445E;
+    border-radius: 1em;
+    border-width: .2em;
 }
 
 #grid {
@@ -54,12 +63,11 @@ to help with the css up above*/
     text-align: center;
 }
 
-/* https://stackoverflow.com/questions/43129360/css-grid-wrapping 
-    /* used to help figure out how to get the squares in the grid to wrap*/
+/*https://codepen.io/virmasalo/pen/XRmyYE continued to use code here to reference for appearence*/
 
-.face {
-    border: solid;
-    border-color: #05445E;
-    border-radius: 1em;
-    border-width: .2em;
+p {
+    font-family: sans-serif;
+    color: #05445E;
+    text-align: center;
+    font-size: 16px;
 }
