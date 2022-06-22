@@ -5,7 +5,25 @@ html, body {
 div, section, article, header, footer {
     box-sizing: border-box;
 }
-/* struggling to get my grid to work and used this site https://codepen.io/virmasalo/pen/XRmyYE 
+
+header {
+    text-align: center;
+    font-family: consolas;
+    margin-bottom: 36px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 36px;
+    text-align: center;
+}
+
+
+/* struggled to get my grid to work and used this site https://codepen.io/virmasalo/pen/XRmyYE 
 to help with the css up above*/
 
 .result {

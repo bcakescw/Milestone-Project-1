@@ -4,12 +4,6 @@ const section = document.querySelector("section");
 // selects the span on the html and assigns it to result
 const result = document.querySelector("span");
 
-//You get 12 chances to match up all the images
-const matchingChances = 12;
-
-//link text 'results' to matchingChances
-result.textContent = matchingChances;
-
 //generate images and name of images in an array using an arrow function
 //arrow function represents owner of function, so getData is the owner of the array function
 const getData = () => [
