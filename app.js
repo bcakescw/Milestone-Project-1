@@ -53,6 +53,7 @@ const cardGenerator = () => {
         // this will create the back of the card
         const back = document.createElement("div")
 
+        //add image source for the face of the card
         face.src = item.imgSrc;
 
         card.classList = "card";
@@ -65,9 +66,21 @@ const cardGenerator = () => {
         card.appendChild(face);
         card.appendChild(back);
         // appendChild is needed to attch the cards to the section so it appears the screen
+
+        //add an evenlistener that when card is clicked it flips it. 
+        card.addEventListener('click', (e) => {
+            card.classList.toggle("toggleCard");
+            checkCards(e);
+            // e connects to the function down below where e is targeted
+        });
     });
 };
 
+//need to check cards to see if they match together. 
+const checkCards = (e) => {
+    const clickedCard = e.target;
+    console.log(clickedCard);
+}
 cardGenerator();
 
 //console.log as undefined, why? Return cardData is  added to randomize variable function.
