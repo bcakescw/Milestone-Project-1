@@ -1,8 +1,14 @@
-html, body {
-   margin: 0;
+html,
+body {
+    margin: 0;
+    background-color: seashell;
 }
 
-div, section, article, header, footer {
+div,
+section,
+article,
+header,
+footer {
     box-sizing: border-box;
 }
 
@@ -15,6 +21,7 @@ header {
 h1 {
     font-size: 36px;
     text-align: center;
+    color: #189AB4;
 }
 
 footer {
@@ -22,6 +29,15 @@ footer {
     text-align: center;
 }
 
+button {
+    background-color: white;
+    color: #05445E;
+    box-shadow: none;
+    border-color: #05445E;
+    padding: 6px 10px;
+    font-size: 20px;
+    border-radius: 1.5em;
+}
 
 /* struggled to get my grid to work and used this site https://codepen.io/virmasalo/pen/XRmyYE 
 to help with the css up above*/
@@ -32,9 +48,18 @@ to help with the css up above*/
 
 #grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-   grid-column-gap: 6px;
-   grid-row-gap:6px;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    text-align: center;
 }
-    /* https://stackoverflow.com/questions/43129360/css-grid-wrapping 
+
+/* https://stackoverflow.com/questions/43129360/css-grid-wrapping 
     /* used to help figure out how to get the squares in the grid to wrap*/
+
+.face {
+    border: solid;
+    border-color: #05445E;
+    border-radius: 1em;
+    border-width: .2em;
+}

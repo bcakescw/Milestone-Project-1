@@ -15,7 +15,7 @@ const getData = () => [
     { imgSrc: "./images/rain-gauge.jpg", name: "rain gauge defintion" },
     { imgSrc: "./images/thermometer.jpeg", name: "thermometer picture" },
     { imgSrc: "./images/Thermometer.jpg", name: "thermometer defintion" },
-    { imgSrc: "./images/blank-square.png", name: "blank square" },
+    { imgSrc: "./images/weather-icon.png", name: "weather icon" },
     //not all images are working, why? simple fix, needed to make sure the .jpg or .jpeg matched with the appropriate image. 
 ]
 
