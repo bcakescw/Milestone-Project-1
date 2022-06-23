@@ -88,8 +88,11 @@ cardGenerator();
 // A return needs to be added because it runs and finishes but at the end it does not return anything, 
 // so return is needed for the cardGenerator function to work.
 
+
+
+
+document.getElementById("reset").addEventListener("click", reset);
+
 function reset(){
-    randomize();
-    selectedPair = [];
-    foundPairs = [];
+   document.getElementsById("grid").innerHTML = randomize();
   }
