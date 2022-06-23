@@ -57,12 +57,14 @@ button {
     border-color: #05445E;
     border-radius: 1em;
     border-width: .2em;
+    width: 200px;
+    height: auto;
 }
 
 #grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-    grid-column-gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-column-gap: 1px;
     grid-row-gap: 1em;
     text-align: center;
     width: 100%;
