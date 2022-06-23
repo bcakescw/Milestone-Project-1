@@ -4,6 +4,10 @@ body {
     background-color: seashell;
     padding-left: 1em;
     padding-right: 1em;
+    max-width: 1280px;
+    min-width: 90%;
+    height: auto;
+    margin: 5%;
 }
 
 div,
@@ -46,7 +50,7 @@ button {
     border-radius: 1.5em;
     font-family: sans-serif;
     cursor: pointer;
-} 
+}
 
 .face {
     border: solid;
@@ -61,6 +65,11 @@ button {
     grid-column-gap: 1em;
     grid-row-gap: 1em;
     text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "face";
+    justify-items: stretch;
 }
 
 /*https://codepen.io/virmasalo/pen/XRmyYE continued to use code here to reference for appearence*/
