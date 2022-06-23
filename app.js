@@ -90,9 +90,8 @@ cardGenerator();
 
 
 
-
-document.getElementById("reset").addEventListener("click", reset);
-
-function reset(){
-   document.getElementsById("grid").innerHTML = randomize();
-  }
+//https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_displaydate tried using this to get button to reset game
+//document.getElementById("mybtn").addEventListener("click", reset);
+//function reset(){
+    //document.getElementsById("grid").innerHTML = randomize();
+// }
