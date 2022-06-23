@@ -1,7 +1,8 @@
 html,
 body {
     margin: 0;
-    background-color: seashell;
+    background-color: #05445E;
+    background-blend-mode: color-burn;
     padding-left: 1em;
     padding-right: 1em;
     max-width: 1280px;
@@ -27,7 +28,7 @@ header {
 h1 {
     font-size: 30px;
     text-align: center;
-    color: #189AB4;
+    color: white;
     font-family: sans-serif;
     /*https://www.w3schools.com/css/css_font.asp used to choose font family*/
 }
@@ -54,7 +55,7 @@ button {
 
 .face {
     border: solid;
-    border-color: #05445E;
+    border-color: black;
     border-radius: 1em;
     border-width: .2em;
     width: 200px;
@@ -78,7 +79,7 @@ button {
 
 p {
     font-family: sans-serif;
-    color: #05445E;
+    color: white;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
 }

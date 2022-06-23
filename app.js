@@ -87,3 +87,9 @@ cardGenerator();
 //console.log as undefined, why? Return cardData is  added to randomize variable function.
 // A return needs to be added because it runs and finishes but at the end it does not return anything, 
 // so return is needed for the cardGenerator function to work.
+
+function reset(){
+    randomize();
+    selectedPair = [];
+    foundPairs = [];
+  }
