@@ -50,9 +50,9 @@ const cardGenerator = () => {
         //this will be the section of the html document the images will appear on
         const card = document.createElement("div");
         // this one will have the picture to it
-        const face = document.createElement("img")
+        const face = document.createElement("img");
         // this will create the back of the card
-        const back = document.createElement("div")
+        const back = document.createElement("div");
 
         //add image source for the face of the card
         face.src = item.imgSrc;
@@ -63,25 +63,27 @@ const cardGenerator = () => {
         //.classList allowed a class to be given to each of the elements that were created just above it.
         // a loop needs to be added next becuase it is only generating one card
 
-        grid.appendChild(card);
+        section.appendChild(card);
         card.appendChild(face);
         card.appendChild(back);
         // appendChild is needed to attch the cards to the section so it appears the screen
 
         //add an evenlistener that when card is clicked it flips it. 
-        card.addEventListener('click', (e) => {
-            card.classList.toggle("toggleCard");
-            checkCards(e);
-            // e connects to the function down below where e is targeted
-        });
+        //card.addEventListener('click', (e) => {
+        //console.log(e.target);
+        // e.target.style.display = 'none';
+        //e.target.className = 'back';
+        //card.classList.toggle("toggleCard");
+        //checkCards(e);
+        // e connects to the function down below where e is targeted
     });
-};
+}
 
 //need to check cards to see if they match together. 
-const checkCards = (e) => {
-    const clickedCard = e.target;
-    console.log(clickedCard);
-}
+//const checkCards = (e) => {
+    //const clickedCard = e.target;
+    //console.log(clickedCard);
+//}
 cardGenerator();
 
 //console.log as undefined, why? Return cardData is  added to randomize variable function.
