@@ -75,6 +75,8 @@ section {
     height: 100%;
     position: absolute;
     /*postion has to be absolute to the card. absolute helps to keep the cards lined up in the section/grid*/
+    pointer-events: none;
+    /*everytime we click on a card, this gives us the card class name */
 }
 
 .back {

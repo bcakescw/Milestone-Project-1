@@ -67,11 +67,17 @@ const cardGenerator = () => {
         card.appendChild(face);
         card.appendChild(back);
         // appendChild is needed to attch the cards to the section so it appears the screen
+        
+        
         card.addEventListener('click', (e) => {
-            card.classList.toggle('toggleCard')
+            card.classList.toggle('toggleCard');
             //created a class named toggleCard related to the function of when you click the image
             //it will "toggle" based on the discription in the css. Css uses the class that is assigned here. Because of the css, we can tranform 
             //(create a toggle) that flips the cards over, so you can see the image. 
+
+            checkCards(e);
+            //the checkCards function created below needs to be used within this function, because we want to check the cards every time it is clicked.
+            //e is added so the event can be passed down.
         });
     });
 }
@@ -81,6 +87,7 @@ const checkCards = (e) => {
     const clickedCard = e.target;
     console.log(clickedCard);
 }
+
 cardGenerator();
 
 //console.log as undefined, why? Return cardData is  added to randomize variable function.
