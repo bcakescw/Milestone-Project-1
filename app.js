@@ -44,6 +44,7 @@ const cardGenerator = () => {
     const cardData = randomize();
     //console.log(cardData);
     //generate the html
+
     cardData.forEach((item) => {
         //forEach was used to loop through each of the items in the array above
 
@@ -56,6 +57,9 @@ const cardGenerator = () => {
 
         //add image source for the face of the card
         face.src = item.imgSrc;
+        card.setAttribute("name", item.name);
+        //just needed to add the setAttribute to get the name of the image from the index file above. item.name allows the javascript to grab the name
+        //from the item (image)
 
         card.classList = "card";
         face.classList = "face";
