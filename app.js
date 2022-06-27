@@ -110,12 +110,6 @@ const checkCards = (e) => {
                 card.classList.remove("flipped");
                 setTimeout(() => card.classList.remove("toggleCard"), 1000);
             });
-
-            document.getElementById("mybtn").addEventListener("click", reset);
-            function reset() {
-                document.getElementsById("section").innerHTML = randomize();
-                //https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_displaydate tried using this to get button to reset game
-            }
         }
     }
 };
