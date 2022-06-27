@@ -71,8 +71,8 @@ const cardGenerator = () => {
         card.appendChild(face);
         card.appendChild(back);
         // appendChild is needed to attch the cards to the section so it appears the screen
-        
-        
+
+
         card.addEventListener('click', (e) => {
             card.classList.toggle('toggleCard');
             //created a class named toggleCard related to the function of when you click the image
@@ -89,8 +89,36 @@ const cardGenerator = () => {
 //need to check cards to see if they match together. 
 const checkCards = (e) => {
     const clickedCard = e.target;
-    console.log(clickedCard);
-}
+    clickedCard.classList.add("flipped");
+    const flippedCard = document.querySelectorAll(".flipped");
+    //every time something is clicked, a flipped class is added to it
+
+    if (flippedCard.length === 2) {
+        if (
+            flippedCard[0].getAttribute("name") ===
+            flippedCard[1].getAttribute("name"))
+        //this checks the two cards that we filled to see if they match by checking the name element with the image
+        {
+            console.log("match");
+            flippedCard.forEach(card => {
+                card.classList.remove("flipped");
+                card.style.pointerEvents = "none";
+            })
+        } else {
+            console.log("wrong");
+            flippedCard.forEach((card) => {
+                card.classList.remove("flipped");
+                setTimeout(() => card.classList.remove("toggleCard"), 1000);
+            });
+
+            document.getElementById("mybtn").addEventListener("click", reset);
+            function reset() {
+                document.getElementsById("section").innerHTML = randomize();
+                //https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_displaydate tried using this to get button to reset game
+            }
+        }
+    }
+};
 
 cardGenerator();
 
@@ -100,8 +128,5 @@ cardGenerator();
 
 
 
-//https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_displaydate tried using this to get button to reset game
-//document.getElementById("mybtn").addEventListener("click", reset);
-//function reset(){
-    //document.getElementsById("grid").innerHTML = randomize();
-// }
+
+
