@@ -11,6 +11,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/04/19/41/candes-1952997_1280.jpg);
+    background-size: 1800px 1200px;
 }
 
 header {
@@ -23,10 +25,16 @@ header {
 h1 {
     font-size: 40px;
     text-align: center;
-    color: #05445E;
+    color: black;
     font-family: sans-serif;
     /*https://www.w3schools.com/css/css_font.asp used to choose font family*/
-    padding: 1em;
+    padding: .5em;
+    background-color: #9B5DE5;
+    border-color: white;
+    border-bottom-style: solid;
+    border-top-style:solid;
+    border-width: 4px;
+    border-radius: 1em;
 }
 
 footer {
@@ -58,10 +66,12 @@ section {
     grid-gap: 2rem;
     padding: 1em;
     perspective: 800px;
-    border-color: #F15BB5;
-    border-style: groove;
-    border-width: 2em;
+    border-color: white;
+    border-style: solid;
     cursor: pointer;
+    border-width: 4px;
+    background-color: #FEE440;
+    border-radius: 14px;
 }
 
 .card {
@@ -70,7 +80,7 @@ section {
     /*have to make sure the transform-style type stays perserve-3d, so that you can have both a face and back image for the card*/
     transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
     /*cubic-bezier is a type of transition type that you can pick from you are creating your transition*/
-    box-shadow: #F15BB5 3px 3px 5px;
+    box-shadow: black 3px 3px 5px;
     transform: rotateY(0deg);
 }
 
@@ -85,23 +95,38 @@ section {
 }
 
 .back {
-    background: #FEE440;
+    background: ;
     backface-visibility: hidden;
     /*made the backface of the background hidden so that all you see is the color before*/
 }
 
 /*https://codepen.io/virmasalo/pen/XRmyYE continued to use code here to reference for appearence*/
 
-p {
+.directions {
     font-family: sans-serif;
-    color: #05445E;
-    text-align: center;
-    font-size: 24px;
-    padding-bottom: 2em;
+    color: black;
+    font-size: 22px;
+    padding-bottom: 1em;
     margin-right: 3em;
     margin-left: 3em;
+    padding-top: 1em;
+    background-color: #9B5DE5;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 1em;
+}
+
+p {
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
 }
 
 .toggleCard {
     transform: rotateY(180deg)
 }
+
+audio::-webkit-media-controls-panel {
+    background-color: #F15BB5;
+  }
