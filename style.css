@@ -61,12 +61,13 @@ section {
     border-color: #F15BB5;
     border-style: groove;
     border-width: 2em;
+    cursor: pointer;
 }
 
 .card {
     position: relative;
     transform-style: preserve-3d;
-    /*have to maek sure the transform-style type stays perserve-3d, so that you can have both a face and back image for the card*/
+    /*have to make sure the transform-style type stays perserve-3d, so that you can have both a face and back image for the card*/
     transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
     /*cubic-bezier is a type of transition type that you can pick from you are creating your transition*/
     box-shadow: #F15BB5 3px 3px 5px;
