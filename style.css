@@ -17,7 +17,7 @@ header {
     text-align: center;
     font-family: consolas;
     margin-bottom: 36px;
-    padding-top: 10em;
+    padding-top: 3em;
 }
 
 h1 {
@@ -26,6 +26,7 @@ h1 {
     color: #05445E;
     font-family: sans-serif;
     /*https://www.w3schools.com/css/css_font.asp used to choose font family*/
+    padding: 1em;
 }
 
 footer {
@@ -57,6 +58,9 @@ section {
     grid-gap: 2rem;
     padding: 1em;
     perspective: 800px;
+    border-color: #F15BB5;
+    border-style: groove;
+    border-width: 2em;
 }
 
 .card {
@@ -91,7 +95,10 @@ p {
     font-family: sans-serif;
     color: #05445E;
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
+    padding-bottom: 2em;
+    margin-right: 3em;
+    margin-left: 3em;
 }
 
 .toggleCard {

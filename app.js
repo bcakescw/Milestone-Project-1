@@ -4,6 +4,9 @@ const section = document.querySelector("section");
 // selects the span on the html and assigns it to result
 const result = document.querySelector("span");
 
+//selects the button and assigns variable of button
+const button = document.querySelector("button");
+
 //generate images and name of images in an array using an arrow function
 //arrow function represents owner of function, so getData is the owner of the array function
 const getData = () => [
@@ -93,7 +96,11 @@ const checkCards = (e) => {
     const flippedCard = document.querySelectorAll(".flipped");
     //every time something is clicked, a flipped class is added to it
 
+    //I know an if, else needed to be used in order to get the images to match. I was thinking of how if the statement is true it does this,
+    //and if it is false, it does the else statement
     if (flippedCard.length === 2) {
+
+        //had to be a complete equal to 2. I don't want the player being able to flip over more than 3 cards at once
         if (
             flippedCard[0].getAttribute("name") ===
             flippedCard[1].getAttribute("name"))
@@ -101,18 +108,35 @@ const checkCards = (e) => {
         {
             console.log("match");
             flippedCard.forEach(card => {
+                //the class name flipped needs to be removed
                 card.classList.remove("flipped");
                 card.style.pointerEvents = "none";
             })
         } else {
+            //the else function is what the cards do if they do not match. 
             console.log("wrong");
             flippedCard.forEach((card) => {
                 card.classList.remove("flipped");
                 setTimeout(() => card.classList.remove("toggleCard"), 1000);
+                //a timeout needed to be added so the cards stayed flipped over long enough so that the player can see what image they have flipped over.
+                //a time out is like a pause function, and you can set how long you want the pause
             });
         }
     }
 };
+
+//function reset(){
+//let CardData = randomize();
+//let faces = document.querySelectorAll(".faces");
+//let cards = doucment.querySelectorAll(".card");
+//cardDAta.forEach((item, index) => {
+// cards[index].classList.remove("toggleCard");
+//});
+//}
+
+//button.addEventListener('click', (e) => {
+//reset();
+//});
 
 cardGenerator();
 
