@@ -4,9 +4,6 @@ const section = document.querySelector("section");
 // selects the span on the html and assigns it to result
 const result = document.querySelector("span");
 
-//selects the button and assigns variable of button
-const button = document.querySelector("button");
-
 //generate images and name of images in an array using an arrow function
 //arrow function represents owner of function, so getData is the owner of the array function
 const getData = () => [
@@ -146,5 +143,8 @@ cardGenerator();
 
 
 
-
+//https://www.youtube.com/watch?v=-tlb4tv4mC4 was used to help with functionality. Did a lot of research and note taking on certain things
+//and why they were done a certain way. I did understand most of why certain things were picked.
+//I knew before he did the if else statements, those were going to be needed to get the cards to match or not. They create true/false and then 
+//say what to do next if the first statement is false. 
 
