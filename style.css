@@ -12,8 +12,8 @@ body {
     align-items: center;
     flex-direction: column;
     background-image: url(https://cdn.pixabay.com/photo/2017/01/04/19/41/candes-1952997_1280.jpg);
-    background-size: 1800px 1200px;
-    margin-top: 10em;
+    background-size: 1800px 1400px;
+    margin-top: 6em;
 }
 
 header {
@@ -26,7 +26,7 @@ header {
 h1 {
     font-size: 40px;
     text-align: center;
-    color: black;
+    color: white;
     font-family: sans-serif;
     /*https://www.w3schools.com/css/css_font.asp used to choose font family*/
     padding: .5em;
@@ -50,14 +50,15 @@ to help with the css up above*/
 
 button {
     background-color: #9B5DE5;
-    color: #FEE440;
+    color: white;
     box-shadow: none;
-    border-color: #00F5D4;
+    border-color: white;
     padding: 6px 10px;
     font-size: 20px;
     border-radius: 1.5em;
     font-family: sans-serif;
     cursor: pointer;
+    border-style: solid;
 }
 
 section {
@@ -105,7 +106,7 @@ section {
 
 .directions {
     font-family: sans-serif;
-    color: black;
+    color: white;
     font-size: 22px;
     padding-bottom: 1em;
     margin-right: 3em;
@@ -113,7 +114,7 @@ section {
     padding-top: 1em;
     background-color: #9B5DE5;
     border-style: solid;
-    border-color: black;
+    border-color: white;
     border-width: 2px;
     border-radius: 1em;
 }
