@@ -35,6 +35,10 @@ const randomize = () => {
     //Math.random function is owned by cardData.sort and is used to randomize the arrary. 
     // https://www.w3schools.com/js/default.asp was used to help randomize the arrary.
     //console.log(cardData);
+
+    //console.log as undefined, why? Return cardData is  added to randomize variable function.
+    // A return needs to be added because it runs and finishes but at the end it does not return anything, 
+    // so return is needed for the cardGenerator function to work.
 }
 
 //cardGenerator is assigned the function of card data being randomize.
@@ -118,6 +122,11 @@ const checkCards = (e) => {
                 //a timeout needed to be added so the cards stayed flipped over long enough so that the player can see what image they have flipped over.
                 //a time out is like a pause function, and you can set how long you want the pause
             });
+
+            //resultDisplay.textContent = cardsWon.length;
+            //if(cardsWon.length === card.length/2) {
+                //resultDisplay.textContent = 'Congrats! You found them all!'
+            //}
         }
     }
 };
@@ -131,6 +140,7 @@ button.addEventListener('click', () => {
     cardData.forEach((item, index) => {
         cards[index].classList.remove("toggleCard");
         //A bug that resets the cards to the blank side but doesn't randomize or let the matched cards be selected again. 
+        cards[index].classList.remove("flipped");
     });
 });
 
@@ -140,9 +150,7 @@ button.addEventListener('click', () => {
 
 cardGenerator();
 
-//console.log as undefined, why? Return cardData is  added to randomize variable function.
-// A return needs to be added because it runs and finishes but at the end it does not return anything, 
-// so return is needed for the cardGenerator function to work.
+
 
 
 
