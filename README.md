@@ -16,6 +16,6 @@ In CSS:
 - Pointerevents were used
 
 **Unfinished Functionality**
-Tried to get a reset button to work but the evenlistener would not work. 
+Have a reset button that works, when clicked. Once a match is made and the reset button is clicked, the cards will turn to their blank side. The bug is that the cards are supposed to randomize again and be clickable. They do not randomize, and the onces that match are no longer clickable. 
 
 
