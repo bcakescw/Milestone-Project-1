@@ -122,29 +122,18 @@ const checkCards = (e) => {
     }
 };
 
-
-//const button = document.querySelector("button");
-
-//button.addEventListener("click", () => {
-	//console.log("clicked element");
-//});
 const button = document.querySelector("button");
 button.addEventListener('click', () => {
     console.log("reset");
-        let cardData = randomize();
-        let faces = document.querySelectorAll(".faces");
-        let cards = document.querySelectorAll(".card");
-        cardData.forEach((item, index) => {
-            cards[index].classList.remove("toggleCard");
-        });
+    let cardData = randomize();
+    let faces = document.querySelectorAll(".faces");
+    let cards = document.querySelectorAll(".card");
+    cardData.forEach((item, index) => {
+        cards[index].classList.remove("toggleCard");
+    });
 });
 
-
-    //button.addEventListener('click', (e) => {
-    //reset();
-    //});
-
-    cardGenerator();
+cardGenerator();
 
 //console.log as undefined, why? Return cardData is  added to randomize variable function.
 // A return needs to be added because it runs and finishes but at the end it does not return anything, 
