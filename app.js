@@ -124,14 +124,19 @@ const checkCards = (e) => {
 
 const button = document.querySelector("button");
 button.addEventListener('click', () => {
-    console.log("reset");
+    //console.log("reset");
     let cardData = randomize();
     let faces = document.querySelectorAll(".faces");
     let cards = document.querySelectorAll(".card");
     cardData.forEach((item, index) => {
         cards[index].classList.remove("toggleCard");
+        //A bug that resets the cards to the blank side but doesn't randomize or let the matched cards be selected again. 
     });
 });
+
+//I got the reset button to work. Needed to move the script link in the html to the very bottom, which allowd the eventlistener to be recognized
+//I had some typos, such as capital letters that shouldn't be there, which caused the code to not recognize variables
+
 
 cardGenerator();
 
